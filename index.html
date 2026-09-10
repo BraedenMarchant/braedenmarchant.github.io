@@ -69,6 +69,77 @@
         </section>
 
 
+        <!-- Project Carousel -->
+
+        <section class="featured-projects">
+
+            <div class="featured-projects-header">
+                <p class="eyebrow">FEATURED PROJECTS</p>
+                <h2>Things I've Built</h2>
+            </div>
+
+            <div class="carousel">
+
+                <button class="carousel-button carousel-left" onclick="scrollProjects(-1)">
+                    ←
+                </button>
+
+                <div class="project-carousel" id="projectCarousel">
+
+                    <a href="hexpad.html" class="carousel-project">
+                        <img src="images/hexpad.jpg" alt="Custom Hexpad">
+                        <div class="carousel-project-title">
+                            Hexpad - Custom Macropad
+                        </div>
+                    </a>
+
+                    <a href="fpv-drone.html" class="carousel-project">
+                        <img src="images/fpv-drone.jpg" alt="Custom FPV Drone">
+                        <div class="carousel-project-title">
+                            Custom Micro FPV Drone - Ongoing
+                        </div>
+                    </a>
+
+                    <a href="school-projects.html" class="carousel-project">
+                        <img src="images/year1-project.jpg" alt="School Project">
+                        <div class="carousel-project-title">
+                            Krystal Klear - Robotic Mirror Arm
+                        </div>
+                    </a>
+
+                    <a href="cobot.html" class="carousel-project">
+                        <img src="images/cobot.jpg" alt="Cobot Project">
+                        <div class="carousel-project-title">
+                            Cobot - TicTacToe Robot
+                        </div>
+                    </a>
+
+                    <a href="school-projects.html" class="carousel-project">
+                        <img src="images/designathon.jpg" alt="Designathon Project">
+                        <div class="carousel-project-title">
+                            Solar Carport - Designathon
+                        </div>
+                    </a>
+
+                    <a href="cad.html" class="carousel-project">
+                        <img src="images/cad.jpg" alt="CAD Project">
+                        <div class="carousel-project-title">
+                            Learning To CAD
+                        </div>
+                    </a>
+
+                </div>
+
+                <button class="carousel-button carousel-right" onclick="scrollProjects(1)">
+                    →
+                </button>
+
+            </div>
+
+        </section>
+        
+
+
         <!-- Featured -->
         <section class="section">
 
@@ -158,6 +229,25 @@
     <footer>
         <p>© 2026 Braeden Marchant</p>
     </footer>
+
+
+
+    <script>
+
+function scrollProjects(direction) {
+
+    const carousel = document.getElementById("projectCarousel");
+
+    const scrollAmount = 370;
+
+    carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: "smooth"
+    });
+
+}
+
+</script>
 
 </body>
 </html>

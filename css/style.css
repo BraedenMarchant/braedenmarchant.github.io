@@ -148,9 +148,9 @@ p {
 
     margin: auto;
 
-    min-height: 75vh;
+    min-height: auto;
 
-    padding: 120px 30px;
+    padding: 80px 30px 60px;
 
     display: flex;
 
@@ -681,6 +681,146 @@ footer {
 footer p {
     font-size: 13px;
 }
+
+
+/* =========================
+   FEATURED PROJECT CAROUSEL
+========================= */
+
+.featured-projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+.featured-projects-header {
+    margin-bottom: 35px;
+}
+
+.featured-projects-header h2 {
+    margin-top: 5px;
+}
+
+
+/* Carousel container */
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Scrollable project row */
+
+.project-carousel {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    padding: 10px 5px 20px;
+
+    scrollbar-width: none;
+
+    width: 100%;
+}
+
+.project-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Individual project */
+
+.carousel-project {
+    flex: 0 0 350px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    text-decoration: none;
+    color: #111;
+
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+.carousel-project:hover {
+    transform: translateY(-4px);
+    border-color: #999;
+}
+
+
+/* Project image */
+
+.carousel-project img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Project title */
+
+.carousel-project-title {
+    padding: 18px 20px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Arrow buttons */
+
+.carousel-button {
+    position: absolute;
+
+    z-index: 10;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: 1px solid #ccc;
+
+    background: white;
+
+    color: #111;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-button:hover {
+    background: #111;
+    color: white;
+}
+
+.carousel-left {
+    left: -22px;
+}
+
+.carousel-right {
+    right: -22px;
+}
+
 
 
 /* =========================
