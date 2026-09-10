@@ -403,11 +403,25 @@ p {
 }
 
 .project-card {
+    display: block;
+
     background: white;
 
     border: 1px solid #ddd;
 
     overflow: hidden;
+
+    text-decoration: none;
+
+    color: #111;
+
+    transition: 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #999;
 }
 
 .project-card > img {
