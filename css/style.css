@@ -338,12 +338,33 @@ p {
     padding-bottom: 15px;
 }
 
+
 .project-list {
     display: flex;
 
     flex-direction: column;
 
     gap: 30px;
+
+    /* display: block; */
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    color: #111;
+
+    transition: 0.2s;
+}
+
+.project-list:hover {
+    transform: translateY(-5px);
+
+    border-color: #999;
 }
 
 .project {
